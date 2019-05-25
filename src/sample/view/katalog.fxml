@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane prefHeight="566.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.KatalogController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="957.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" text="BCCA">
+               <content>
+                  <TableView fx:id="BCAA" prefHeight="454.0" prefWidth="957.0">
+                     <columns>
+                        <TableColumn fx:id="name" prefWidth="319.99998779296857" text="Название" />
+                        <TableColumn fx:id="weight" minWidth="0.0" prefWidth="145.5999755859375" text="Вес, граммы" />
+                        <TableColumn fx:id="type" minWidth="0.0" prefWidth="267.20001220703125" text="Тип фасовки" />
+                        <TableColumn fx:id="price" minWidth="0.0" prefWidth="223.99996337890627" text="Цена, в рублях" />
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab fx:id="tab2" text="Протеины">
+               <content>
+                  <TableView fx:id="Protein" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="name1" prefWidth="319.99998779296857" text="Название" />
+                        <TableColumn fx:id="weight1" minWidth="0.0" prefWidth="145.5999755859375" text="Вес, граммы" />
+                        <TableColumn fx:id="type1" minWidth="0.0" prefWidth="267.20001220703125" text="Тип фасовки" />
+                        <TableColumn fx:id="price1" minWidth="0.0" prefWidth="223.99996337890627" text="Цена, в рублях" />
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+            <Tab fx:id="tab3" text="Аминокислоты">
+               <content>
+                  <TableView fx:id="Amino" prefHeight="535.0" prefWidth="957.0">
+                     <columns>
+                        <TableColumn fx:id="name2" prefWidth="306.40003662109393" text="Название" />
+                        <TableColumn fx:id="weight2" minWidth="0.0" prefWidth="158.39996337890625" text="Вес, граммы" />
+                        <TableColumn fx:id="type2" minWidth="0.0" prefWidth="267.20001220703125" text="Тип фасовки" />
+                        <TableColumn fx:id="price2" minWidth="0.0" prefWidth="223.99996337890627" text="Цена, в рублях" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#koradd" prefHeight="20.0" prefWidth="426.0" text="добавить в корзину">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin></Button>
+   </children>
+</FlowPane>

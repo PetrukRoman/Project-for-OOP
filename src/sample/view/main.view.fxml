@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="546.0" prefWidth="957.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="540.0" layoutX="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imj/istockphoto-661030632-1024x1024.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
